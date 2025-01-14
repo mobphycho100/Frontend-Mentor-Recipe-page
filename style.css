@@ -14,54 +14,172 @@ White: hsl(0, 0%, 100%)
 
  */
 
+@font-face {
+    font-family: Young Serif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
 
+@font-face {
+    font-family: Outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------- Utilities ----------- */
+
+ul, ol{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);
+    padding: 15px 20px;
+    font-family: Outfit;
+}
+
+p{
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit;
+    margin: 12px 0;
+}
+
+li{
+    padding-inline: 12px;
+}
+
+li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+hr{
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+/* ----------- Main Container ----------- */
 
 .main-container{
+    position: relative;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 20px;
+background-color: hsl(30, 54%, 90%);
+font-family: Young serif;
+}
 
+@media screen and (min-width: 768px) {
+    .main-container{
+        padding: 80px 20px;
+    }
 }
 
 .recipe-card{
-
+width: min(100%, 550px);
+padding: 25px;
+background-color: white;
+border-radius: 15px;
 }
 
-.recipe-image{
-
+.card-image{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .card-content{
-
-}
-
-.header{
-
+display: flex;
+flex-direction: column;
+gap: 15px;
 }
 
 .main-heading{
-
+color: hsl(24, 5%, 18%);
+font-size: 25px;
+font-weight: 400;
 }
 
-.description{
-
+.sub-heading{
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+    font-weight: 400;
 }
+
+/* ----------- Preparation Container ----------- */
 
 .preparation-time{
-
+background-color: hsl(330, 100%, 98%);
+font-family: Outfit;
+padding: 20px;
+border-radius: 8px;
 }
 
 .preparation-time h3{
-
+color: hsl(332, 51%, 32%);
+margin-bottom: 12px;
 }
 
 .preparation-time ul{
-
+    padding: 0 20px;
 }
 
+.preparation-time li::marker{
+    color: hsl(332, 51%, 32%);
+}
 
+/* ----------- Table ----------- */
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    text-align: left;
+    font-family: Outfit;
+}
 
+th{
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
 
+td{
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
 
+tr:last-child th, tr:last-child td {
+    border: none;
+}
 
+/* ----------- Attribution ----------- */
 
+.attribution{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Outfit;
+    font-size: 14px;
+}
 
+.attribution a{
+    text-decoration: none;
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution a:hover{
+    text-shadow: 0 0 5px hsl(14, 37%, 54%);
+}
 
