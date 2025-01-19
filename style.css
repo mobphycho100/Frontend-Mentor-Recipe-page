@@ -92,6 +92,10 @@ border-radius: 15px;
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+.card-image:hover{
+    scale: 0.97;
 }
 
 .card-content{
