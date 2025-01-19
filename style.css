@@ -36,7 +36,7 @@ ul,
 ol {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
     font-size: 14px;
     color: hsl(30, 10%, 34%);
     padding: 15px 20px;
@@ -83,7 +83,7 @@ hr {
 }
 
 .recipe-card {
-    width: min(100%, 550px);
+    width: min(100%, 630px);
     padding: 25px;
     background-color: white;
     border-radius: 15px;
