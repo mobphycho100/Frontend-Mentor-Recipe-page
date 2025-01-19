@@ -16,12 +16,12 @@ White: hsl(0, 0%, 100%)
 
 @font-face {
     font-family: "Young Serif";
-    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Outfit";
-    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
 * {
@@ -40,13 +40,13 @@ ol {
     font-size: 14px;
     color: hsl(30, 10%, 34%);
     padding: 15px 20px;
-    font-family: Outfit;
+    font-family: "Outfit";
 }
 
 p {
     font-size: 14px;
     color: hsl(30, 10%, 34%);
-    font-family: Outfit;
+    font-family: "Outfit";
     margin: 12px 0;
 }
 
@@ -73,7 +73,7 @@ hr {
     align-items: center;
     padding: 40px 20px;
     background-color: hsl(30, 54%, 90%);
-    font-family: Young serif;
+    font-family: "Young serif";
 }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +117,7 @@ hr {
 
 .preparation-time {
     background-color: hsl(330, 100%, 98%);
-    font-family: Outfit;
+    font-family: "Outfit";
     padding: 20px;
     border-radius: 8px;
 }
@@ -148,7 +148,7 @@ td {
     border-bottom: 1px solid #ddd;
     padding: 10px 20px;
     text-align: left;
-    font-family: Outfit;
+    font-family: "Outfit";
 }
 
 th {
@@ -174,7 +174,7 @@ tr:last-child td {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    font-family: Outfit;
+    font-family: "Outfit";
     font-size: 14px;
 }
 
