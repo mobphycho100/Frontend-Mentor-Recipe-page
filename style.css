@@ -15,16 +15,16 @@ White: hsl(0, 0%, 100%)
  */
 
 @font-face {
-    font-family: Young Serif;
-    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-family: "Young Serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: Outfit;
-    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-family: "Outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,7 +32,8 @@ White: hsl(0, 0%, 100%)
 
 /* ----------- Utilities ----------- */
 
-ul, ol{
+ul,
+ol {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -42,75 +43,71 @@ ul, ol{
     font-family: Outfit;
 }
 
-p{
+p {
     font-size: 14px;
     color: hsl(30, 10%, 34%);
     font-family: Outfit;
     margin: 12px 0;
 }
 
-li{
+li {
     padding-inline: 12px;
 }
 
-li::marker{
+li::marker {
     color: hsl(14, 45%, 36%);
     font-weight: 600;
 }
 
-hr{
+hr {
     border: 1px solid hsl(30, 18%, 87%);
 }
 
 /* ----------- Main Container ----------- */
 
-.main-container{
+.main-container {
     position: relative;
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 40px 20px;
-background-color: hsl(30, 54%, 90%);
-font-family: Young serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: hsl(30, 54%, 90%);
+    font-family: Young serif;
 }
 
 @media screen and (min-width: 768px) {
-    .main-container{
+    .main-container {
         padding: 80px 20px;
     }
 }
 
-.recipe-card{
-width: min(100%, 550px);
-padding: 25px;
-background-color: white;
-border-radius: 15px;
+.recipe-card {
+    width: min(100%, 550px);
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.card-image{
+.card-image {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
-    transition: all 0.3s ease;
-}
-.card-image:hover{
-    scale: 0.97;
 }
 
-.card-content{
-display: flex;
-flex-direction: column;
-gap: 15px;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.main-heading{
-color: hsl(24, 5%, 18%);
-font-size: 25px;
-font-weight: 400;
+.main-heading {
+    color: hsl(24, 5%, 18%);
+    font-size: 25px;
+    font-weight: 400;
 }
 
-.sub-heading{
+.sub-heading {
     color: hsl(14, 45%, 36%);
     font-size: 20px;
     font-weight: 400;
@@ -118,23 +115,24 @@ font-weight: 400;
 
 /* ----------- Preparation Container ----------- */
 
-.preparation-time{
-background-color: hsl(330, 100%, 98%);
-font-family: Outfit;
-padding: 20px;
-border-radius: 8px;
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    font-family: Outfit;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.preparation-time h3{
-color: hsl(332, 51%, 32%);
-margin-bottom: 12px;
+.preparation-time h2 {
+    font-size: 18px;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 12px;
 }
 
-.preparation-time ul{
+.preparation-time ul {
     padding: 0 20px;
 }
 
-.preparation-time li::marker{
+.preparation-time li::marker {
     color: hsl(332, 51%, 32%);
 }
 
@@ -144,33 +142,35 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-  
-th, td {
+
+th,
+td {
     border-bottom: 1px solid #ddd;
     padding: 10px 20px;
     text-align: left;
     font-family: Outfit;
 }
 
-th{
+th {
     font-size: 14px;
     font-weight: 400;
     color: hsl(30, 10%, 34%);
 }
 
-td{
+td {
     font-size: 13px;
     font-weight: 700;
     color: hsl(14, 45%, 36%);
 }
 
-tr:last-child th, tr:last-child td {
+tr:last-child th,
+tr:last-child td {
     border: none;
 }
 
 /* ----------- Attribution ----------- */
 
-.attribution{
+.attribution {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -178,12 +178,11 @@ tr:last-child th, tr:last-child td {
     font-size: 14px;
 }
 
-.attribution a{
+.attribution a {
     text-decoration: none;
     color: hsl(14, 45%, 36%);
 }
 
-.attribution a:hover{
+.attribution a:hover {
     text-shadow: 0 0 5px hsl(14, 37%, 54%);
 }
-
